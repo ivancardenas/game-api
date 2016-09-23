@@ -1,3 +1,3 @@
 class Point < ActiveRecord::Base
-  scope :game_id, -> (game_id) { where game_id: game_id }
+  scope :game_id, -> (game) { where game_id: game }
 end

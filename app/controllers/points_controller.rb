@@ -6,7 +6,7 @@ class PointsController < ApplicationController
   def index
     @points = Point.all
 
-    @points = @points.game_id(params[:game_id]) if params[:game_id]
+    @points = @points.game_id(params[:game]) if params[:game]
 
     render json: @points
   end

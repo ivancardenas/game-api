@@ -64,7 +64,7 @@ class GamesController < ApplicationController
     end
 
     def put_params
-      params.require(:game).permit(:status)
+      params.require(:game).permit(:status, :userp, :playerp, :userq, :playerq)
     end
 
     def get_params
